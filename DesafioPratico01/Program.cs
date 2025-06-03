@@ -11,51 +11,51 @@ class Program
 
     static void Main()
     {
-       //Usuario usuario = new Usuario();
+        Usuario usuario = new Usuario();
 
-       //usuario.InformarNome();
-       //usuario.Saudar();
+        usuario.InformarNome();
+        usuario.Saudar();
 
-       //usuario.MostrarNomeCompleto();
+        usuario.MostrarNomeCompleto();
 
-       // Console.WriteLine("Inserir os parametros para os calculos:");
-       // string valor1 = Console.ReadLine();
-       // string valor2 = Console.ReadLine();
+        Console.WriteLine("Inserir os parametros para os calculos:");
+        string valor1 = Console.ReadLine();
+        string valor2 = Console.ReadLine();
 
-       // double numero1 = ConverterParaDouble(valor1);
-       // double numero2 = ConverterParaDouble(valor2);
-
-
-       // static double ConverterParaDouble(string valor)
-       // {
-       //     return Convert.ToDouble(valor);
-       // }
-
-       // Calculos calculadora = new Calculos(numero1, numero2);
-
-       // Console.WriteLine("Soma: " + calculadora.Somar());
-       // Console.WriteLine("Subtrair: " + calculadora.Subtrair());
-       // Console.WriteLine("Dividir: " + calculadora.Dividir());
-       // Console.WriteLine("Multiplicar: " + calculadora.Multiplicar());
+        double numero1 = ConverterParaDouble(valor1);
+        double numero2 = ConverterParaDouble(valor2);
 
 
-        //static string ContarCaracteres()
-        //{
-        //    Console.WriteLine("Insira uma frase");
-        //    string frase = Console.ReadLine();
+        static double ConverterParaDouble(string valor)
+        {
+            return Convert.ToDouble(valor);
+        }
 
-        //    string[] palavras = frase.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        //    int totalLetras = 0;
+        Calculos calculadora = new Calculos(numero1, numero2);
 
-        //    for (int i = 0; i < palavras.Length; i++)
-        //    {
-        //        totalLetras += palavras[i].Length;
-        //    }
+        Console.WriteLine("Soma: " + calculadora.Somar());
+        Console.WriteLine("Subtrair: " + calculadora.Subtrair());
+        Console.WriteLine("Dividir: " + calculadora.Dividir());
+        Console.WriteLine("Multiplicar: " + calculadora.Multiplicar());
 
-        //    return $"Total de letras: {totalLetras}";
-        //}
 
-        //Console.WriteLine(ContarCaracteres());
+        static string ContarCaracteres()
+        {
+            Console.WriteLine("Insira uma frase");
+            string frase = Console.ReadLine();
+
+            string[] palavras = frase.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            int totalLetras = 0;
+
+            for (int i = 0; i < palavras.Length; i++)
+            {
+                totalLetras += palavras[i].Length;
+            }
+
+            return $"Total de letras: {totalLetras}";
+        }
+
+        Console.WriteLine(ContarCaracteres());
 
         static bool VerificarPlaca()
         {
